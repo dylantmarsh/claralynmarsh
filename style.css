@@ -49,6 +49,7 @@ h1 {
 	font-size:38pt;
 	margin-bottom:-15px;
 	text-align:center;
+	font-weight:normal !important;
 }
 
 p {
