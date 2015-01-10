@@ -126,14 +126,26 @@ canvas {
 	margin-bottom:15px;
 }
 
+#banner {
+	display:none;
+	position:absolute;
+	margin-top:-50px
+}
+
 @media (max-width: 500px) {
   section {
 		margin-top:20px;
 		width:300px;
+		padding-top:55px;
 	}
 	
 	#map {
 		display:none;
+	}
+	
+	#banner {
+		display:block;
+		margin-top:-30px;
 	}
 }
 
