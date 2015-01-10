@@ -56,11 +56,19 @@ h1 {
 	font-family: 'Clicker Script', cursive;
 	text-align: center;
 	font-size:18pt;
-	margin-bottom:25px;
+	margin-bottom:30px;
 }
 
 #peekaboo img {
+	width:125px;
 	border-radius:50%;
+}
+
+footer {
+	text-align:center;
+	color:#666;
+	font-weight:100;
+	margin-bottom:40px;
 }
 
 p {
