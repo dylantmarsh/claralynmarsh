@@ -1,67 +1,61 @@
 <html>
 	<head>
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Lily+Script+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css">
-		<script src="snow.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/snow.js"></script>
+		<script type="text/javascript" src="js/personalize.js"></script>
 	</head>
 	
 	<body>
-		<img src="banner.png" id="banner">
+		<img src="img/banner.png" id="banner">
 		
 		<section>
 			<h1>Clara Marsh is Turning 1!</h1>
-			<h2>Come Celebrate With Us</h2>
+			<h2>Come Celebrate With Us.</h2>
+			
 			<div id="clara"></div>
 			
-			<script>
-				var name = getQueryVariable("name");
-
-				function getQueryVariable(variable) {
-					var query = window.location.search.substring(1);
-					var vars = query.split("&");
-					for (var i=0;i<vars.length;i++) {
-						var pair = vars[i].split("=");
-						if (pair[0] == variable) {
-							return decodeURI(pair[1]);
-						}
-					}
-					
-					return "";
-				}
-			</script>
+			<script>renderPersonalization();</script>
 			
-			<script>
-				if(name.length > 0) {
-					document.write("<h2>" + name + ", you are invited!</h2>");
-				}
-			</script>
-			
-			<p style="text-align:center">
+			<p class="center">
 				Our little snowflake is growing so fast,</br>
 				it's hard to believe a year has passed.<br/>
-				Please join us for...<br/><br/> <span>Clara's Winter Onederland</span><br/>
+				Please join us for...
+		
+				<span class="fancy">Clara's Winter Onederland</span><br/>
 			</p><br/>
 	
-			<img src="snowflake.png" id="snowflake">
+			<img src="img/snowflake.png" id="snowflake">
 		
 			<h2><b>Pioneer Pavilion - Mill Creek Park</b><br/>February 15th 2015 @ 2:00PM - 4:00PM</h2>
-			<img src="http://www.millcreekmetroparks.org/wp-content/uploads/2013/07/pioneer_pavilion_1.jpg" id="pioneer">
-			<iframe id="map" width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|15|41.082615|-80.68008"></iframe>
+			
+			<img src="img/pioneer_pavilion.jpg" id="pioneer">
+	
+			<iframe id="map" 
+							width="500" 
+							height="400" 
+							frameborder="0" 
+							scrolling="no" 
+							marginheight="0" 
+							marginwidth="0" 
+							src="http://my.ctrlq.org/maps/#roadmap|15|41.082615|-80.68008">
+			</iframe>
 			
 			<p>
-				Pioneer Pavilion - Old Furnace Road Youngstown, Ohio<br/>
-				GPS Coordinates: +41.082615, -80.68008
+				<b>Pioneer Pavilion</b><br/>
+				Old Furnace Road Youngstown, Ohio<br/>
+				<span class="subtle">GPS Coordinates: +41.082615, -80.68008</span>
 			</p>
 			
-			<p id="rsvp">
-				RSVP: Call Katie (330) 647-8187
+			<p class="center">
+				<b>RSVP: Call Katie (330) 647-8187</b>
 			</p>
 		</section>
 
 		<div id="peekaboo">
-			<img src="peekaboo.jpg"><br/>
+			<img src="img/peekaboo.jpg"><br/>
 			Peek-a-Boo!
 		</div>
 
